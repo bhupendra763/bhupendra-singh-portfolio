@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects-section">
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">My Work</h2>
+                <p class="section-subtitle">
+                    Discover my recent projects,including a company project I’ve worked on.
+                </p>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1: Hospital Management System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/Hospital.jpeg" alt="Hospital Management System">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">Hibernate</span>
+                            <span class="project-tag">Data JPA</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">Jenkins</span>
+                            <span class="project-tag">Postman</span>
+                            <span class="project-tag">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hospital Management System</h3>
+                        <p class="project-description">
+                            Designed and developed a secure, role-based Hospital Management System featuring Admin, Doctor,
+                            Nurse, and Receptionist modules. Integrated hospital databases, ensured regulatory compliance,
+                            and implemented patient/staff management, authentication, and reporting functionalities.
+                            Focused on usability, scalability, and maintainability using modern Spring Boot architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Aswath Education Portal -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/Study.jpeg" alt="Aswath Education Portal">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Hibernate</span>
+                            <span class="project-tag">Git</span>
+                            <span class="project-tag">Postman</span>
+                            <span class="project-tag">Jenkins</span>
+                            <span class="project-tag">Camunda</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Aswath Education Portal</h3>
+                        <p class="project-description">
+                            Developed RESTful APIs using Java, Spring Boot, and MySQL for branch management and security
+                            key-lock mechanisms. Automated deployment pipelines with Jenkins and GitHub, improving
+                            version control and CI/CD workflow. Enhanced educational data security and process automation
+                            through Camunda BPM integration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

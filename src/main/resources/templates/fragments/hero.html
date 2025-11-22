@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="hero-section">
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+
+        <div class="container hero-container">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <div class="hero-greeting">Hi there, I'm</div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Bhupendra Singh Gour </span>
+                </h1>
+                <h2 class="hero-subtitle">Software Engineer — AI/ML</h2>
+                <p class="hero-description">
+                    Hi! I'm <strong>Bhupendra Singh Gour</strong>, a passionate Software Engineer specializing in backend development and AI/ML.
+                    I work extensively with <strong>Java</strong> and <strong>Python</strong> (Spring Boot, Flask) to build and deploy
+                    scalable, production-ready applications.
+                    <br><br>
+                    With over a year of hands-on experience, I’m currently expanding my expertise in <strong>Artificial Intelligence</strong>
+                    to develop smarter, data-driven solutions.
+                    <br><br>
+                    Beyond coding, I love exploring topics in <strong>geopolitics</strong> and <strong>international affairs</strong>,
+                    playing <strong>javelin</strong>, gaming, and spending time with friends.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="tel:+919468896271" class="social-link"><i class="fas fa-phone-alt"></i></a>
+                    <a href="mailto:official.bhupendra08@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/bhupendra-singh-gour-047256256/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/bhupendra763" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Visual -->
+            <div class="hero-visual" style="display: flex; justify-content: center; align-items: center;">
+                <div class="hero-visual-inner" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="hero-visual-frame"
+                         style="width: 360px; height: 450px; border-radius: 80px; overflow: hidden;
+                    box-shadow: 0 4px 25px rgba(0,0,0,0.4); background-color: #111;">
+                        <img th:src="@{/images/profile.jpeg}" alt="Profile"
+                             style="width: 100%; height: 100%; object-fit: contain; border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator-line">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

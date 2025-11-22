@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="achievements-section">
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Achievements</h2>
+                <p class="section-subtitle">
+                    Recognitions and milestones I've reached along my journey
+                </p>
+            </div>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="achievement-title">Java Certificate </h3>
+                    <img th:src="@{/images/Java.png}" alt="Java Certificate">
+                    <p class="achievement-description">
+                        Completed Java with DSA and System Design 2.0
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="achievement-title"> Jaipur National University </h3>
+                    <img th:src="@{/images/Bhupendra_Singh.jpg}" alt="Java Certificate">
+                    <p class="achievement-description">
+                  Advance Computing Technology
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="achievement-title">Internship Certificate  </h3>
+                    <img th:src="@{/images/InternshipCertificate.jpg}" alt="Java Certificate">
+                    <p class="achievement-description">
+                        Aswath Software Private Limited
+                    </p>
+                </div>
+
+<!--                <div class="achievement-card">-->
+<!--                    <div class="achievement-icon">-->
+<!--                        <i class="fa-solid fa-code-merge"></i>-->
+<!--                    </div>-->
+<!--                    <h3 class="achievement-title">GitHub Contributions</h3>-->
+<!--                    <p class="achievement-description">-->
+<!--                        Actively contributed to open-source projects on GitHub, shared reusable code libraries, and consistently maintained personal repositories featuring full-stack applications, helping developers learn and collaborate globally.-->
+<!--                    </p>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
